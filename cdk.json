@@ -1,5 +1,5 @@
 {
-  "app": "node bin/cdk-ts.js",
+  "app": "npx ts-node --prefer-ts-exts bin/cdk-ts.ts",
   "watch": {
     "include": [
       "**"
@@ -7,7 +7,9 @@
     "exclude": [
       "README.md",
       "cdk*.json",
-      "jest.config.js",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
       "package*.json",
       "yarn.lock",
       "node_modules",
